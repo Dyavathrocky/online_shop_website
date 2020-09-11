@@ -22,7 +22,7 @@ class Product(models.Model):
     image = models.ImageField(upload_to='products/%Y/%m/%d' , blank=True)
     description = models.TextField(blank=True)
     price = models.DecimalField(max_digits=10 , decimal_places=2)
-    avilable = models.BooleanField(default=True)
+    available = models.BooleanField(default=True)
     created = models.DateField(auto_now_add=True)
     updated = models.DateField(auto_now=True)
 
